@@ -15,8 +15,8 @@ const biciclette = [
     { nome: "Wilier Triestina Zero SLR", peso: 6.9 }
   ];
   
-  
-  const biciLeggera = biciclette.reduce((bic1, bic2) => bic1.peso < bic2.peso ? bic1 : bic2);
-  
-  
-  console.log("La bici con il peso minore è: ", biciLeggera.nome, "con un peso di", biciLeggera.peso, "kg.");
+  let biciLeggera = biciclette[0]
+  for (let i = 0; i < biciclette.length; i++) {
+    if (biciLeggera < biciclette)
+      console.log(biciLeggera)
+  }
